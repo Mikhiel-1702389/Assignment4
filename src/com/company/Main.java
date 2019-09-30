@@ -31,7 +31,7 @@ public class Main {
     public static void main(String[] args) {
         int[] myArr = getArr();
         int search;
-        int size = 0;
+        int size = myArr.length;
         int choice;
         System.out.println("Choose an operation from the list below and enter the corresponding number to initiate");
         System.out.println("********** List of Operations **********");
@@ -62,7 +62,6 @@ public class Main {
                 bi.binarySearch(myArr, size, search);
                 break;
             case 3:
-                size = myArr.length;
                 System.out.println("What integer value are you searching for?");
                 Scanner bs = new Scanner(System.in);
                 bs.close();
@@ -70,7 +69,6 @@ public class Main {
                 b.bubbleSort(myArr, size);
                 break;
             case 4:
-                size = myArr.length;
                 System.out.println("What integer value are you searching for?");
                 Scanner ss = new Scanner(System.in);
                 ss.close();
@@ -78,7 +76,6 @@ public class Main {
                 s.selectionSort(myArr, size);
                 break;
             case 5:
-                size = myArr.length;
                 System.out.println("What integer value are you searching for?");
                 Scanner is = new Scanner(System.in);
                 is.close();
